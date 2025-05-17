@@ -1,46 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>GenAI Sui Wallet</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-900 text-white font-sans">
-
-  <!-- Navbar -->
-  <header class="bg-gray-900 text-white fixed top-0 w-full shadow z-50">
-    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-      <div class="text-xl font-bold">GenAI Sui</div>
-      <nav class="hidden md:flex space-x-6">
-        <a href="#features" class="hover:text-blue-400">Features</a>
+<body class="bg-gray-900 text-white font-sans">  <!-- Navbar -->  <header class="bg-gray-800 text-white shadow">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <img src="https://i.ibb.co/WNhhvqS6/photo-2025-05-17-20-17-34-removebg-preview.png" alt="Logo" class="w-10 h-10">
+        <h1 class="text-xl font-bold">GenAI Sui</h1>
+      </div>
+      <nav class="space-x-4">
         <a href="#about" class="hover:text-blue-400">About</a>
-        <a href="#docs" class="hover:text-blue-400">Docs</a>
+        <a href="#roadmap" class="hover:text-blue-400">Roadmap</a>
+        <a href="#tokenomics" class="hover:text-blue-400">Tokenomics</a>
+        <a href="#whitepaper" class="hover:text-blue-400">Whitepaper</a>
         <a href="https://t.me/genaisui" target="_blank" class="hover:text-blue-400">Telegram</a>
         <a href="https://x.com/GenAisuichain" target="_blank" class="hover:text-blue-400">Twitter</a>
       </nav>
-      <!-- Mobile menu button -->
-      <div class="md:hidden">
-        <button onclick="toggleMenu()" class="focus:outline-none">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"/>
-          </svg>
-        </button>
-      </div>
     </div>
-    <!-- Mobile Menu -->
-    <div id="mobileMenu" class="md:hidden hidden px-4 pb-4">
-      <a href="#features" class="block py-2 hover:text-blue-400">Features</a>
-      <a href="#about" class="block py-2 hover:text-blue-400">About</a>
-      <a href="#docs" class="block py-2 hover:text-blue-400">Docs</a>
-      <a href="https://t.me/genaisui" target="_blank" class="block py-2 hover:text-blue-400">Telegram</a>
-      <a href="https://x.com/GenAisuichain" target="_blank" class="block py-2 hover:text-blue-400">Twitter</a>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="flex flex-col items-center justify-center min-h-screen text-center px-4 pt-32">
+  </header>  <!-- Hero Section -->  <section class="flex flex-col items-center justify-center min-h-screen text-center px-4">
+    <img src="https://i.ibb.co/WNhhvqS6/photo-2025-05-17-20-17-34-removebg-preview.png" alt="Logo" class="w-24 mb-4">
     <h1 class="text-4xl md:text-6xl font-bold mb-4">GenAI Sui Wallet</h1>
     <p class="text-lg md:text-xl max-w-xl mb-6">
       Experience the future of Web3. Powered by AI. Send, receive, and trade crypto & NFTs using simple prompts.
@@ -48,11 +29,13 @@
     <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg shadow">
       Download on Play Store
     </a>
-    <img src="mockup.png" alt="Wallet Mockup" class="mt-12 w-80 md:w-96">
-  </section>
-
-  <!-- Features Section -->
-  <section id="features" class="bg-gray-800 py-16 px-6">
+    <img src="https://i.ibb.co/QFhp9Rrs/output-onlinepngtools.png" alt="Wallet Mockup" class="mt-12 w-80 md:w-96">
+  </section>  <!-- About Section -->  <section id="about" class="bg-gray-800 py-16 px-6">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">About GenAI Sui</h2>
+      <p class="mb-4">GenAI Sui Wallet is an innovative Web3 wallet built on the high-performance Sui blockchain. It combines the power of artificial intelligence with the flexibility of decentralized finance, enabling users to manage crypto assets and NFTs through natural language prompts.</p>
+    </div>
+  </section>  <!-- Features Section -->  <section class="bg-gray-900 py-16 px-6">
     <div class="max-w-5xl mx-auto text-center">
       <h2 class="text-3xl font-bold mb-8">Why Choose GenAI Sui?</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
@@ -70,43 +53,36 @@
         </div>
       </div>
     </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="bg-gray-900 py-16 px-6">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-4">About GenAI Sui</h2>
-      <p class="text-gray-300 text-lg">
-        GenAI Sui is a next-generation crypto wallet built with AI and powered by the Sui blockchain. 
-        Our mission is to make crypto and NFTs accessible to everyone through natural language interaction.
-      </p>
+  </section>  <!-- Roadmap Section -->  <section id="roadmap" class="bg-gray-800 py-16 px-6">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Roadmap</h2>
+      <ul class="text-left space-y-4">
+        <li><strong>Q2 2025:</strong> Launch GenAI Sui MVP, Telegram community setup, and branding.</li>
+        <li><strong>Q3 2025:</strong> Integrate AI prompt engine, NFT gallery, and dApp browser.</li>
+        <li><strong>Q4 2025:</strong> Launch mobile apps, token generation event, and partnership expansion.</li>
+        <li><strong>Q1 2026:</strong> DAO governance launch and AI voice interaction.</li>
+      </ul>
     </div>
-  </section>
-
-  <!-- Docs Section -->
-  <section id="docs" class="bg-gray-800 py-16 px-6">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-4">Documentation</h2>
-      <p class="text-gray-300 text-lg">
-        Learn how to use GenAI Sui Wallet with our comprehensive guides, tutorials, and API documentation. 
-        Stay updated and integrate with the future of AI-powered Web3 tools.
-      </p>
-      <a href="#" class="inline-block mt-6 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg shadow">
-        View Docs
-      </a>
+  </section>  <!-- Tokenomics Section -->  <section id="tokenomics" class="bg-gray-900 py-16 px-6">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Tokenomics</h2>
+      <p>Total Supply: <strong>1,000,000,000 GENAI</strong></p>
     </div>
-  </section>
+  </section>  <!-- Whitepaper Section -->  <section id="whitepaper" class="bg-gray-800 py-16 px-6">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4 text-center">Whitepaper</h2>
+      <h3 class="text-xl font-semibold mt-4">1. Introduction</h3>
+      <p>GenAI Sui Wallet is an innovative Web3 wallet built on the high-performance Sui blockchain. It combines the power of artificial intelligence with the flexibility of decentralized finance, enabling users to manage crypto assets and NFTs through natural language prompts.</p><h3 class="text-xl font-semibold mt-4">2. Vision & Mission</h3>
+  <p><strong>Vision:</strong> To make decentralized finance and blockchain interactions intuitive and universally accessible through artificial intelligence.</p>
+  <p><strong>Mission:</strong></p>
+  <ul class="list-disc ml-6">
+    <li>Provide seamless AI-powered crypto transactions.</li>
+    <li>Empower users to control their assets through voice or text.</li>
+    <li>Drive Web3 adoption through intuitive design and zero-friction UX.</li>
+  </ul>
+</div>
 
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-center py-6 text-sm text-gray-400">
+  </section>  <!-- Footer -->  <footer class="bg-gray-900 text-center py-6 text-sm text-gray-400">
     &copy; 2025 GenAI Sui. All rights reserved.
-  </footer>
-
-  <script>
-    function toggleMenu() {
-      const menu = document.getElementById("mobileMenu");
-      menu.classList.toggle("hidden");
-    }
-  </script>
-</body>
+  </footer></body>
 </html>
