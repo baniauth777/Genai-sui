@@ -1,34 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>GenAI Sui Wallet</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("mobile-menu");
+      menu.classList.toggle("hidden");
+    }
+  </script>
 </head>
-<body class="bg-gray-900 text-white font-sans">
-
-  <!-- Header with Nav -->
-  <header class="flex justify-between items-center p-4 bg-gray-900 border-b border-gray-800 sticky top-0 z-50">
-    <div class="flex items-center space-x-3">
-      <img src="https://i.ibb.co/WNhhvqS6/photo-2025-05-17-20-17-34-removebg-preview.png" alt="Logo" class="w-10 h-10">
-      <span class="text-xl font-bold">GenAI Sui</span>
+<body class="bg-gray-900 text-white font-sans">  <!-- Navbar -->  <header class="w-full bg-gray-950 text-white shadow-md fixed top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 flex justify-between items-center h-16">
+      <div class="text-2xl font-bold">GenAI Sui</div>
+      <div class="md:hidden">
+        <button onclick="toggleMenu()">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+      <nav class="hidden md:flex gap-6">
+        <a href="#home" class="hover:text-blue-400">Home</a>
+        <a href="#about" class="hover:text-blue-400">About</a>
+        <a href="#roadmap" class="hover:text-blue-400">Roadmap</a>
+        <a href="#whitepaper" class="hover:text-blue-400">Whitepaper</a>
+        <a href="https://t.me/genaisui" target="_blank" class="hover:text-blue-400">Telegram</a>
+        <a href="https://x.com/GenAisuichain" target="_blank" class="hover:text-blue-400">Twitter</a>
+      </nav>
     </div>
-    <nav class="space-x-6 hidden md:block">
-      <a href="#home" class="hover:text-blue-400">Home</a>
-      <a href="#about" class="hover:text-blue-400">About</a>
-      <a href="#roadmap" class="hover:text-blue-400">Roadmap</a>
-      <a href="#whitepaper" class="hover:text-blue-400">Whitepaper</a>
-    </nav>
-    <div class="space-x-4 text-xl">
-      <a href="https://t.me/genaisui" target="_blank" class="hover:text-blue-400"><i class="fab fa-telegram-plane"></i></a>
-      <a href="https://x.com/GenAisuichain" target="_blank" class="hover:text-blue-400"><i class="fab fa-twitter"></i></a>
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 bg-gray-950">
+      <a href="#home" class="block py-2 hover:text-blue-400">Home</a>
+      <a href="#about" class="block py-2 hover:text-blue-400">About</a>
+      <a href="#roadmap" class="block py-2 hover:text-blue-400">Roadmap</a>
+      <a href="#whitepaper" class="block py-2 hover:text-blue-400">Whitepaper</a>
+      <a href="https://t.me/genaisui" target="_blank" class="block py-2 hover:text-blue-400">Telegram</a>
+      <a href="https://x.com/GenAisuichain" target="_blank" class="block py-2 hover:text-blue-400">Twitter</a>
     </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section id="home" class="flex flex-col items-center justify-center min-h-screen text-center px-4">
+  </header>  <!-- Hero Section -->  <section id="home" class="flex flex-col items-center justify-center min-h-screen text-center px-4 pt-24">
     <h1 class="text-4xl md:text-6xl font-bold mb-4">GenAI Sui Wallet</h1>
     <p class="text-lg md:text-xl max-w-xl mb-6">
       Experience the future of Web3. Powered by AI. Send, receive, and trade crypto & NFTs using simple prompts.
@@ -36,71 +46,49 @@
     <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg shadow">
       Download on Play Store
     </a>
-    <img src="https://i.ibb.co/Y7JP2Mpv/mockup.png" alt="Wallet Mockup" class="mt-12 w-80 md:w-96">
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="bg-gray-800 py-16 px-6">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-4">About GenAI Sui</h2>
-      <p class="mb-4 text-lg">
-        GenAI Sui Wallet is an innovative Web3 wallet built on the high-performance Sui blockchain. It combines the power of artificial intelligence with the flexibility of decentralized finance, enabling users to manage crypto assets and NFTs through natural language prompts.
-      </p>
-      <h3 class="text-2xl font-semibold mt-6 mb-2">Vision</h3>
-      <p>To make decentralized finance and blockchain interactions intuitive and universally accessible through AI.</p>
-      <h3 class="text-2xl font-semibold mt-6 mb-2">Mission</h3>
-      <ul class="list-disc list-inside text-left max-w-2xl mx-auto">
+    <img src="mockup.png" alt="Wallet Mockup" class="mt-12 w-80 md:w-96">
+  </section>  <!-- About Section -->  <section id="about" class="bg-gray-800 py-16 px-6">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">About GenAI Sui</h2>
+      <p class="mb-4">GenAI Sui Wallet is an innovative Web3 wallet built on the high-performance Sui blockchain. It combines the power of artificial intelligence with the flexibility of decentralized finance, enabling users to manage crypto assets and NFTs through natural language prompts.</p>
+      <h3 class="text-xl font-semibold mt-6">Vision</h3>
+      <p class="mb-4">To make decentralized finance and blockchain interactions intuitive and universally accessible through artificial intelligence.</p>
+      <h3 class="text-xl font-semibold mt-6">Mission</h3>
+      <ul class="list-disc list-inside text-left max-w-3xl mx-auto">
         <li>Provide seamless AI-powered crypto transactions.</li>
         <li>Empower users to control their assets through voice or text.</li>
         <li>Drive Web3 adoption through intuitive design and zero-friction UX.</li>
       </ul>
     </div>
-  </section>
-
-  <!-- Roadmap Section -->
-  <section id="roadmap" class="bg-gray-900 py-16 px-6">
+  </section>  <!-- Roadmap Section -->  <section id="roadmap" class="bg-gray-900 py-16 px-6">
     <div class="max-w-5xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-8">Roadmap</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+      <h2 class="text-3xl font-bold mb-6">Roadmap</h2>
+      <div class="space-y-6 text-left">
         <div>
-          <h3 class="text-xl font-semibold mb-2">Q1 2025</h3>
-          <p>Project launch, team formation, concept design, and Sui integration started.</p>
+          <h4 class="text-xl font-semibold">Q2 2025 - Launch</h4>
+          <p>Initial wallet launch, AI prompt integration, NFT support, and beta release on Android.</p>
         </div>
         <div>
-          <h3 class="text-xl font-semibold mb-2">Q2 2025</h3>
-          <p>Alpha wallet release with AI prompt features. Community building begins.</p>
+          <h4 class="text-xl font-semibold">Q3 2025 - Expansion</h4>
+          <p>Launch on iOS, integration with major dApps, fiat onramp partnerships.</p>
         </div>
         <div>
-          <h3 class="text-xl font-semibold mb-2">Q3 2025</h3>
-          <p>Token launch, liquidity setup, and NFT integration with Sui dApps.</p>
+          <h4 class="text-xl font-semibold">Q4 2025 - Ecosystem Growth</h4>
+          <p>Release of GenAI SDK, DAO voting system, cross-chain features, and developer grants.</p>
         </div>
         <div>
-          <h3 class="text-xl font-semibold mb-2">Q4 2025</h3>
-          <p>Partnerships, AI assistant upgrades, and cross-chain features exploration.</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-semibold mb-2">2026+</h3>
-          <p>DAO governance launch, voice interface, and mass adoption initiatives.</p>
+          <h4 class="text-xl font-semibold">Q1 2026 - Global Adoption</h4>
+          <p>Global marketing push, multi-language support, AI-driven investment tools.</p>
         </div>
       </div>
     </div>
-  </section>
-
-  <!-- Whitepaper Section -->
-  <section id="whitepaper" class="bg-gray-800 py-16 px-6">
-    <div class="max-w-3xl mx-auto text-center">
+  </section>  <!-- Whitepaper Section -->  <section id="whitepaper" class="bg-gray-800 py-16 px-6">
+    <div class="max-w-5xl mx-auto text-center">
       <h2 class="text-3xl font-bold mb-6">Whitepaper</h2>
-      <p class="mb-4">
-        Download the official GenAI Sui Whitepaper to understand the full architecture, tokenomics, and long-term vision of the platform.
-      </p>
-      <a href="https://yourdomain.com/genai-whitepaper.pdf" target="_blank" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-lg inline-block">Download Whitepaper</a>
+      <p class="mb-6">Explore the full vision, mission, technology, and tokenomics of GenAI Sui Wallet. Read our whitepaper for technical and strategic insights.</p>
+      <a href="whitepaper.pdf" target="_blank" class="text-blue-400 hover:underline">Download Whitepaper (PDF)</a>
     </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-center py-6 text-sm text-gray-400">
+  </section>  <!-- Footer -->  <footer class="bg-gray-900 text-center py-6 text-sm text-gray-400 mt-12">
     &copy; 2025 GenAI Sui. All rights reserved.
-  </footer>
-
-</body>
+  </footer></body>
 </html>
