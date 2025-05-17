@@ -8,8 +8,39 @@
 </head>
 <body class="bg-gray-900 text-white font-sans">
 
+  <!-- Navbar -->
+  <header class="bg-gray-900 text-white fixed top-0 w-full shadow z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <div class="text-xl font-bold">GenAI Sui</div>
+      <nav class="hidden md:flex space-x-6">
+        <a href="#features" class="hover:text-blue-400">Features</a>
+        <a href="#about" class="hover:text-blue-400">About</a>
+        <a href="#docs" class="hover:text-blue-400">Docs</a>
+        <a href="https://t.me/genaisui" target="_blank" class="hover:text-blue-400">Telegram</a>
+        <a href="https://x.com/GenAisuichain" target="_blank" class="hover:text-blue-400">Twitter</a>
+      </nav>
+      <!-- Mobile menu button -->
+      <div class="md:hidden">
+        <button onclick="toggleMenu()" class="focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="md:hidden hidden px-4 pb-4">
+      <a href="#features" class="block py-2 hover:text-blue-400">Features</a>
+      <a href="#about" class="block py-2 hover:text-blue-400">About</a>
+      <a href="#docs" class="block py-2 hover:text-blue-400">Docs</a>
+      <a href="https://t.me/genaisui" target="_blank" class="block py-2 hover:text-blue-400">Telegram</a>
+      <a href="https://x.com/GenAisuichain" target="_blank" class="block py-2 hover:text-blue-400">Twitter</a>
+    </div>
+  </header>
+
   <!-- Hero Section -->
-  <section class="flex flex-col items-center justify-center min-h-screen text-center px-4">
+  <section class="flex flex-col items-center justify-center min-h-screen text-center px-4 pt-32">
     <h1 class="text-4xl md:text-6xl font-bold mb-4">GenAI Sui Wallet</h1>
     <p class="text-lg md:text-xl max-w-xl mb-6">
       Experience the future of Web3. Powered by AI. Send, receive, and trade crypto & NFTs using simple prompts.
@@ -21,7 +52,7 @@
   </section>
 
   <!-- Features Section -->
-  <section class="bg-gray-800 py-16 px-6">
+  <section id="features" class="bg-gray-800 py-16 px-6">
     <div class="max-w-5xl mx-auto text-center">
       <h2 class="text-3xl font-bold mb-8">Why Choose GenAI Sui?</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
@@ -42,59 +73,27 @@
   </section>
 
   <!-- About Section -->
-  <section class="py-16 px-6">
+  <section id="about" class="bg-gray-900 py-16 px-6">
     <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-6">About GenAI Sui</h2>
-      <p class="text-lg text-gray-300">
-        GenAI Sui is a next-generation Web3 wallet built on the Sui blockchain and powered by artificial intelligence. 
-        Our mission is to make crypto accessible, intuitive, and intelligent for everyone. 
-        Whether you're a beginner or an expert, GenAI Sui simplifies your digital asset management.
+      <h2 class="text-3xl font-bold mb-4">About GenAI Sui</h2>
+      <p class="text-gray-300 text-lg">
+        GenAI Sui is a next-generation crypto wallet built with AI and powered by the Sui blockchain. 
+        Our mission is to make crypto and NFTs accessible to everyone through natural language interaction.
       </p>
-    </div>
-  </section>
-
-  <!-- Roadmap Section -->
-  <section class="bg-gray-800 py-16 px-6">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-8">Roadmap</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
-        <div>
-          <h4 class="text-xl font-semibold mb-2">Q2 2025</h4>
-          <ul class="list-disc ml-6 text-gray-300">
-            <li>Alpha Wallet Launch</li>
-            <li>Basic AI Commands</li>
-            <li>Initial NFT Integration</li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="text-xl font-semibold mb-2">Q3 2025</h4>
-          <ul class="list-disc ml-6 text-gray-300">
-            <li>DAO Governance Launch</li>
-            <li>Cross-Chain Functionality</li>
-            <li>Telegram AI Assistant</li>
-          </ul>
-        </div>
-      </div>
     </div>
   </section>
 
   <!-- Docs Section -->
-  <section class="py-16 px-6">
-    <div class="max-w-3xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-6">Documentation</h2>
-      <p class="text-gray-300 mb-4">
-        Learn how to use GenAI Sui Wallet, integrate AI features, and explore the API.
+  <section id="docs" class="bg-gray-800 py-16 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Documentation</h2>
+      <p class="text-gray-300 text-lg">
+        Learn how to use GenAI Sui Wallet with our comprehensive guides, tutorials, and API documentation. 
+        Stay updated and integrate with the future of AI-powered Web3 tools.
       </p>
-      <a href="#" class="text-blue-400 underline hover:text-blue-300">Read the Docs (coming soon)</a>
-    </div>
-  </section>
-
-  <!-- Social Media Section -->
-  <section class="bg-gray-800 py-12 px-6 text-center">
-    <h3 class="text-xl font-bold mb-4">Connect with Us</h3>
-    <div class="flex justify-center gap-6 text-blue-400 text-lg">
-      <a href="https://t.me/genaisui" target="_blank" rel="noopener noreferrer">Telegram</a>
-      <a href="https://x.com/GenAisuichain" target="_blank" rel="noopener noreferrer">Twitter</a>
+      <a href="#" class="inline-block mt-6 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg shadow">
+        View Docs
+      </a>
     </div>
   </section>
 
@@ -103,5 +102,11 @@
     &copy; 2025 GenAI Sui. All rights reserved.
   </footer>
 
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("mobileMenu");
+      menu.classList.toggle("hidden");
+    }
+  </script>
 </body>
 </html>
